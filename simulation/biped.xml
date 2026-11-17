@@ -1,0 +1,187 @@
+<mujoco model="biped_refined">
+  <compiler angle="degree" meshdir="meshes" autolimits="true" />
+  <option gravity="0 -9.81 0" timestep="0.002" integrator="implicitfast" iterations="80" />
+  <statistic center="0 0.48 0" extent="1.05" />
+  <visual>
+    <global azimuth="140" elevation="-15" />
+  </visual>
+  <asset>
+    <texture name="floor_tiles" type="2d" builtin="checker" width="128" height="128" rgb1="0.24 0.28 0.33" rgb2="0.31 0.35 0.40" />
+    <material name="floor_mat" texture="floor_tiles" texrepeat="6 6" texuniform="true" reflectance="0.05" />
+    <mesh name="pelvis_bridge" file="pelvis_bridge.stl" scale="0.001 0.001 0.001" />
+    <mesh name="pelvis_cap" file="pelvis_cap.stl" scale="0.001 0.001 0.001" />
+    <mesh name="waist_interface" file="waist_interface.stl" scale="0.001 0.001 0.001" />
+    <mesh name="pelvis_inlay" file="pelvis_inlay.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_pelvis_mount" file="left_pelvis_mount.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_pitch_pin" file="left_pitch_pin.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_outer_hip_cover" file="left_outer_hip_cover.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_pitch_yoke" file="left_pitch_yoke.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_roll_pin" file="left_roll_pin.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_roll_carrier" file="left_roll_carrier.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_yaw_bushing" file="left_yaw_bushing.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_thigh" file="left_thigh.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_knee_pin" file="left_knee_pin.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_thigh_fairing" file="left_thigh_fairing.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_shin" file="left_shin.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_ankle_collar" file="left_ankle_collar.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_ankle_pitch_pin" file="left_ankle_pitch_pin.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_shin_fairing" file="left_shin_fairing.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_shin_inlay" file="left_shin_inlay.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_ankle_gimbal" file="left_ankle_gimbal.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_ankle_roll_pin" file="left_ankle_roll_pin.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_foot_chassis" file="left_foot_chassis.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_toe_shell" file="left_toe_shell.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_heel_counter" file="left_heel_counter.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_heel_tread" file="left_heel_tread.stl" scale="0.001 0.001 0.001" />
+    <mesh name="left_forefoot_tread" file="left_forefoot_tread.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_pelvis_mount" file="right_pelvis_mount.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_pitch_pin" file="right_pitch_pin.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_outer_hip_cover" file="right_outer_hip_cover.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_pitch_yoke" file="right_pitch_yoke.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_roll_pin" file="right_roll_pin.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_roll_carrier" file="right_roll_carrier.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_yaw_bushing" file="right_yaw_bushing.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_thigh" file="right_thigh.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_knee_pin" file="right_knee_pin.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_thigh_fairing" file="right_thigh_fairing.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_shin" file="right_shin.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_ankle_collar" file="right_ankle_collar.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_ankle_pitch_pin" file="right_ankle_pitch_pin.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_shin_fairing" file="right_shin_fairing.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_shin_inlay" file="right_shin_inlay.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_ankle_gimbal" file="right_ankle_gimbal.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_ankle_roll_pin" file="right_ankle_roll_pin.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_foot_chassis" file="right_foot_chassis.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_toe_shell" file="right_toe_shell.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_heel_counter" file="right_heel_counter.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_heel_tread" file="right_heel_tread.stl" scale="0.001 0.001 0.001" />
+    <mesh name="right_forefoot_tread" file="right_forefoot_tread.stl" scale="0.001 0.001 0.001" />
+  </asset>
+  <worldbody>
+    <light pos="2 3 1" dir="-2 -3 -1" />
+    <geom name="floor" type="plane" size="2 2 0.05" zaxis="0 1 0" material="floor_mat" contype="1" conaffinity="2" friction="0.9 0.005 0.0001" />
+    <body name="pelvis" pos="0 0.7204248357 0">
+      <freejoint name="floating_base" />
+      <camera name="inspection" pos="1.55 0.38 -1.6" mode="fixed" xyaxes="0.7183 0 0.6957 -0.2094 0.9536 0.2162" />
+      <body name="left_hip_pitch_link" pos="0 0.14 -0.135">
+        <joint name="left_hip_pitch" type="hinge" axis="0 0 1" range="-90 120" damping="0.5" armature="0.02" />
+        <body name="left_hip_roll_link" pos="0 -0.065 0">
+          <joint name="left_hip_roll" type="hinge" axis="1 0 0" range="-60 60" damping="0.5" armature="0.02" />
+          <body name="left_hip_yaw_link" pos="0 -0.075 0">
+            <joint name="left_hip_yaw" type="hinge" axis="0 1 0" range="-120 120" damping="0.5" armature="0.02" />
+            <body name="left_knee_link" pos="-0.01932578532 -0.3099248357 0">
+              <joint name="left_knee" type="hinge" axis="0 0 1" range="-145 145" damping="0.5" armature="0.02" />
+              <body name="left_ankle_pitch_link" pos="0 -0.317 0">
+                <joint name="left_ankle_pitch" type="hinge" axis="0 0 1" range="-32 32" damping="0.35" armature="0.01" />
+                <body name="left_ankle_roll_link" pos="0 -0.048 0">
+                  <joint name="left_ankle_roll" type="hinge" axis="1 0 0" range="-25 25" damping="0.35" armature="0.01" />
+                  <inertial pos="0.0428244250598 -0.0293386954019 0.00160899912909" mass="0.644935162835" fullinertia="0.000307396625379 0.00236624446804 0.0021818387795 7.88391822164e-05 -6.54636656388e-05 3.19133822071e-06" />
+                  <geom name="left_foot_chassis" type="mesh" mesh="left_foot_chassis" pos="0 0 0" rgba="0.18 0.22 0.27 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+                  <geom name="left_toe_shell" type="mesh" mesh="left_toe_shell" pos="0 0 0" rgba="0.85 0.88 0.89 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+                  <geom name="left_heel_counter" type="mesh" mesh="left_heel_counter" pos="0 0 0" rgba="0.34 0.39 0.44 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+                  <geom name="left_heel_tread" type="mesh" mesh="left_heel_tread" pos="0 0 0" rgba="0.08 0.105 0.13 1" contype="2" conaffinity="1" friction="0.9 0.005 0.0001" group="1" />
+                  <geom name="left_forefoot_tread" type="mesh" mesh="left_forefoot_tread" pos="0 0 0" rgba="0.08 0.105 0.13 1" contype="2" conaffinity="1" friction="0.9 0.005 0.0001" group="1" />
+                </body>
+                <inertial pos="0 -0.0226958799016 3.3083504671e-19" mass="0.342295836492" fullinertia="0.000194811056504 0.000161670657873 0.000284749699932 1.17683030343e-20 -5.24778442923e-22 -2.31939456093e-21" />
+                <geom name="left_ankle_gimbal" type="mesh" mesh="left_ankle_gimbal" pos="0 0 0" rgba="0.18 0.22 0.27 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+                <geom name="left_ankle_roll_pin" type="mesh" mesh="left_ankle_roll_pin" pos="0 -0.048 0" rgba="0.55 0.61 0.66 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+              </body>
+              <inertial pos="-0.00670959901244 -0.146059339737 3.59548705661e-12" mass="6.79509904189" fullinertia="0.0486524519693 0.0108414242457 0.0501605829189 0.00206715987336 -1.02142687133e-12 -1.68723896119e-12" />
+              <geom name="left_shin" type="mesh" mesh="left_shin" pos="-4.23528945248e-12 4.56372504232e-11 0" rgba="0.18 0.22 0.27 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+              <geom name="left_ankle_collar" type="mesh" mesh="left_ankle_collar" pos="0 -0.317 0" rgba="0.18 0.22 0.27 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+              <geom name="left_ankle_pitch_pin" type="mesh" mesh="left_ankle_pitch_pin" pos="0 -0.317 0" rgba="0.55 0.61 0.66 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+              <geom name="left_shin_fairing" type="mesh" mesh="left_shin_fairing" pos="0 0 0" rgba="0.85 0.88 0.89 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+              <geom name="left_shin_inlay" type="mesh" mesh="left_shin_inlay" pos="0 0 0" rgba="0.95 0.46 0.095 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+            </body>
+            <inertial pos="-0.00173085125733 -0.134732145143 -2.9686019723e-12" mass="4.50109487235" fullinertia="0.0468506366729 0.0101487349097 0.0445402616839 -0.00429152274385 6.09154170468e-13 5.23333992436e-13" />
+            <geom name="left_thigh" type="mesh" mesh="left_thigh" pos="0 0 0" rgba="0.18 0.22 0.27 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+            <geom name="left_knee_pin" type="mesh" mesh="left_knee_pin" pos="-0.0193257853242 -0.309924835654 0" rgba="0.55 0.61 0.66 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+            <geom name="left_thigh_fairing" type="mesh" mesh="left_thigh_fairing" pos="0 0 0" rgba="0.85 0.88 0.89 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+          </body>
+          <inertial pos="-1.10258961857e-18 -0.0446801426102 9.92309758372e-17" mass="0.768398606094" fullinertia="0.000728053863033 0.000203039364996 0.000723788784381 -2.64209517093e-20 -3.33557622562e-21 9.98623903381e-19" />
+          <geom name="left_roll_carrier" type="mesh" mesh="left_roll_carrier" pos="0 0 0" rgba="0.18 0.22 0.27 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+          <geom name="left_yaw_bushing" type="mesh" mesh="left_yaw_bushing" pos="0 -0.075 0" rgba="0.34 0.39 0.44 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+        </body>
+        <inertial pos="-2.26415936752e-16 -0.0263282853629 -3.36729023825e-17" mass="0.732300581358" fullinertia="0.000783790283641 0.001104393687 0.00176146051918 -5.23644052414e-18 -9.91879413978e-19 -8.29767420493e-19" />
+        <geom name="left_pitch_yoke" type="mesh" mesh="left_pitch_yoke" pos="0 0 0" rgba="0.18 0.22 0.27 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+        <geom name="left_roll_pin" type="mesh" mesh="left_roll_pin" pos="0 -0.065 0" rgba="0.55 0.61 0.66 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+      </body>
+      <body name="right_hip_pitch_link" pos="0 0.14 0.135">
+        <joint name="right_hip_pitch" type="hinge" axis="0 0 1" range="-90 120" damping="0.5" armature="0.02" />
+        <body name="right_hip_roll_link" pos="0 -0.065 0">
+          <joint name="right_hip_roll" type="hinge" axis="1 0 0" range="-60 60" damping="0.5" armature="0.02" />
+          <body name="right_hip_yaw_link" pos="0 -0.075 0">
+            <joint name="right_hip_yaw" type="hinge" axis="0 1 0" range="-120 120" damping="0.5" armature="0.02" />
+            <body name="right_knee_link" pos="-0.01932578532 -0.3099248357 0">
+              <joint name="right_knee" type="hinge" axis="0 0 1" range="-145 145" damping="0.5" armature="0.02" />
+              <body name="right_ankle_pitch_link" pos="0 -0.317 0">
+                <joint name="right_ankle_pitch" type="hinge" axis="0 0 1" range="-32 32" damping="0.35" armature="0.01" />
+                <body name="right_ankle_roll_link" pos="0 -0.048 0">
+                  <joint name="right_ankle_roll" type="hinge" axis="1 0 0" range="-25 25" damping="0.35" armature="0.01" />
+                  <inertial pos="0.0428244250598 -0.0293386954019 -0.00160899912909" mass="0.644935162835" fullinertia="0.000307396625379 0.00236624446804 0.0021818387795 7.88391822164e-05 6.54636656388e-05 -3.19133822071e-06" />
+                  <geom name="right_foot_chassis" type="mesh" mesh="right_foot_chassis" pos="0 0 0" rgba="0.18 0.22 0.27 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+                  <geom name="right_toe_shell" type="mesh" mesh="right_toe_shell" pos="0 0 0" rgba="0.85 0.88 0.89 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+                  <geom name="right_heel_counter" type="mesh" mesh="right_heel_counter" pos="0 0 0" rgba="0.34 0.39 0.44 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+                  <geom name="right_heel_tread" type="mesh" mesh="right_heel_tread" pos="0 0 0" rgba="0.08 0.105 0.13 1" contype="2" conaffinity="1" friction="0.9 0.005 0.0001" group="1" />
+                  <geom name="right_forefoot_tread" type="mesh" mesh="right_forefoot_tread" pos="0 0 0" rgba="0.08 0.105 0.13 1" contype="2" conaffinity="1" friction="0.9 0.005 0.0001" group="1" />
+                </body>
+                <inertial pos="0 -0.0226958799016 -3.3083504671e-19" mass="0.342295836492" fullinertia="0.000194811056504 0.000161670657873 0.000284749699932 1.17683030343e-20 5.24778442923e-22 2.31939456093e-21" />
+                <geom name="right_ankle_gimbal" type="mesh" mesh="right_ankle_gimbal" pos="0 0 0" rgba="0.18 0.22 0.27 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+                <geom name="right_ankle_roll_pin" type="mesh" mesh="right_ankle_roll_pin" pos="0 -0.048 0" rgba="0.55 0.61 0.66 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+              </body>
+              <inertial pos="-0.00670959901244 -0.146059339737 -3.59548752602e-12" mass="6.79509904189" fullinertia="0.0486524519693 0.0108414242457 0.0501605829189 0.00206715987336 1.0214270544e-12 1.68723859113e-12" />
+              <geom name="right_shin" type="mesh" mesh="right_shin" pos="-4.23528945248e-12 4.56372504232e-11 0" rgba="0.18 0.22 0.27 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+              <geom name="right_ankle_collar" type="mesh" mesh="right_ankle_collar" pos="0 -0.317 0" rgba="0.18 0.22 0.27 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+              <geom name="right_ankle_pitch_pin" type="mesh" mesh="right_ankle_pitch_pin" pos="0 -0.317 0" rgba="0.55 0.61 0.66 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+              <geom name="right_shin_fairing" type="mesh" mesh="right_shin_fairing" pos="0 0 0" rgba="0.85 0.88 0.89 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+              <geom name="right_shin_inlay" type="mesh" mesh="right_shin_inlay" pos="0 0 0" rgba="0.95 0.46 0.095 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+            </body>
+            <inertial pos="-0.00173085125733 -0.134732145143 2.9686019723e-12" mass="4.50109487235" fullinertia="0.0468506366729 0.0101487349097 0.0445402616839 -0.00429152274385 -6.09154170468e-13 -5.23333992436e-13" />
+            <geom name="right_thigh" type="mesh" mesh="right_thigh" pos="0 0 0" rgba="0.18 0.22 0.27 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+            <geom name="right_knee_pin" type="mesh" mesh="right_knee_pin" pos="-0.0193257853242 -0.309924835654 0" rgba="0.55 0.61 0.66 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+            <geom name="right_thigh_fairing" type="mesh" mesh="right_thigh_fairing" pos="0 0 0" rgba="0.85 0.88 0.89 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+          </body>
+          <inertial pos="-1.10258961857e-18 -0.0446801426102 -9.92309758372e-17" mass="0.768398606094" fullinertia="0.000728053863033 0.000203039364996 0.000723788784381 -2.64209517093e-20 3.33557622562e-21 -9.98623903381e-19" />
+          <geom name="right_roll_carrier" type="mesh" mesh="right_roll_carrier" pos="0 0 0" rgba="0.18 0.22 0.27 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+          <geom name="right_yaw_bushing" type="mesh" mesh="right_yaw_bushing" pos="0 -0.075 0" rgba="0.34 0.39 0.44 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+        </body>
+        <inertial pos="-2.26415936752e-16 -0.0263282853629 3.36729023825e-17" mass="0.732300581358" fullinertia="0.000783790283641 0.001104393687 0.00176146051918 -5.23644052414e-18 9.91879413978e-19 8.29767420493e-19" />
+        <geom name="right_pitch_yoke" type="mesh" mesh="right_pitch_yoke" pos="0 0 0" rgba="0.18 0.22 0.27 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+        <geom name="right_roll_pin" type="mesh" mesh="right_roll_pin" pos="0 -0.065 0" rgba="0.55 0.61 0.66 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+      </body>
+      <geom name="pelvis_bridge" type="mesh" mesh="pelvis_bridge" pos="0 0 0" rgba="0.18 0.22 0.27 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+      <geom name="pelvis_cap" type="mesh" mesh="pelvis_cap" pos="0 0 0" rgba="0.85 0.88 0.89 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+      <geom name="waist_interface" type="mesh" mesh="waist_interface" pos="0 0 0" rgba="0.18 0.22 0.27 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+      <geom name="pelvis_inlay" type="mesh" mesh="pelvis_inlay" pos="0 0 0" rgba="0.95 0.46 0.095 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+      <geom name="left_pelvis_mount" type="mesh" mesh="left_pelvis_mount" pos="0 0.14 -0.135" rgba="0.18 0.22 0.27 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+      <geom name="left_pitch_pin" type="mesh" mesh="left_pitch_pin" pos="0 0.14 -0.135" rgba="0.55 0.61 0.66 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+      <geom name="left_outer_hip_cover" type="mesh" mesh="left_outer_hip_cover" pos="0 0.14 -0.135" rgba="0.85 0.88 0.89 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+      <geom name="right_pelvis_mount" type="mesh" mesh="right_pelvis_mount" pos="0 0.14 0.135" rgba="0.18 0.22 0.27 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+      <geom name="right_pitch_pin" type="mesh" mesh="right_pitch_pin" pos="0 0.14 0.135" rgba="0.55 0.61 0.66 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+      <geom name="right_outer_hip_cover" type="mesh" mesh="right_outer_hip_cover" pos="0 0.14 0.135" rgba="0.85 0.88 0.89 1" contype="0" conaffinity="0" friction="0.9 0.005 0.0001" group="1" />
+      <inertial pos="0.00397657379098 0.254935784608 6.74100167059e-17" mass="7.32572435797" fullinertia="0.171850928827 0.157192260005 0.0291245148005 -0.000991476599608 -3.09675245516e-17 -1.40946282423e-17" />
+    </body>
+  </worldbody>
+  <actuator>
+    <motor name="left_hip_pitch_motor" joint="left_hip_pitch" ctrlrange="-75 75" />
+    <motor name="left_hip_roll_motor" joint="left_hip_roll" ctrlrange="-65 65" />
+    <motor name="left_hip_yaw_motor" joint="left_hip_yaw" ctrlrange="-30 30" />
+    <motor name="left_knee_motor" joint="left_knee" ctrlrange="-35 35" />
+    <motor name="left_ankle_pitch_motor" joint="left_ankle_pitch" ctrlrange="-32 32" />
+    <motor name="left_ankle_roll_motor" joint="left_ankle_roll" ctrlrange="-25 25" />
+    <motor name="right_hip_pitch_motor" joint="right_hip_pitch" ctrlrange="-75 75" />
+    <motor name="right_hip_roll_motor" joint="right_hip_roll" ctrlrange="-65 65" />
+    <motor name="right_hip_yaw_motor" joint="right_hip_yaw" ctrlrange="-30 30" />
+    <motor name="right_knee_motor" joint="right_knee" ctrlrange="-35 35" />
+    <motor name="right_ankle_pitch_motor" joint="right_ankle_pitch" ctrlrange="-32 32" />
+    <motor name="right_ankle_roll_motor" joint="right_ankle_roll" ctrlrange="-25 25" />
+  </actuator>
+  <equality>
+    <weld name="pelvis_support" body1="pelvis" active="true" />
+  </equality>
+  <keyframe>
+    <key name="neutral" qpos="0 0.7204248357 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" />
+    <key name="left_step_preview" qpos="0 0.7204248357 0 1 0 0 0 0.314159265359 0 0 -0.610865238198 0.296705972839 0 0 0 0 0 0 0" />
+    <key name="ankle_preview" qpos="0 0.7204248357 0 1 0 0 0 0.436332312999 0 0 -0.872664625997 0.261799387799 0.209439510239 0.436332312999 0 0 -0.872664625997 0.261799387799 -0.209439510239" />
+  </keyframe>
+</mujoco>
